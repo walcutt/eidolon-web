@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  frontend:
+    image: node:latest
+    command: bash -c "npm ci && npm run dev"
+    working_dir: /home/node/app
+    volumes: 
+      - ./eidolon-web-frontend:/home/node/app
+    ports:
+      - 5173:5173
