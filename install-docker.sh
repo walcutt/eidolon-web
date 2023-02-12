@@ -9,7 +9,7 @@ apt-get update
 apt-get install \
     ca-certificates \
     curl \
-    gnupng \
+    gnupg \
     lsb-release
 
 mkdir -m 0755 -p /etc/apt/keyrings
