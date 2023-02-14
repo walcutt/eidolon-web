@@ -1,4 +1,4 @@
-import { MoveType } from './MoveType';
+import type { MoveType } from './MoveType';
 
 class Move {
     Name: string;
