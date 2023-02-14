@@ -29,8 +29,7 @@ const Alchemist = new PlaybookStaticInfo(
         new Move(
             'Release',
             'You don\'t need to touch something to *Revert* it.',
-            MoveType.ADVANCED,
-            ['Revert']
+            MoveType.ADVANCED
         ),
         new Move(
             'Transformative Vision',
