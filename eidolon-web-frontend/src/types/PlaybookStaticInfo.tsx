@@ -1,19 +1,19 @@
-import { Move } from './Move';
-import { RatingSet } from './RatingSet';
+import type { Move } from './Move';
+import type { RatingSet } from './RatingSet';
 
 class PlaybookStaticInfo {
     Title: string;
-    PowerPrompt: string;
+    PowerPrompt: JSX.Element;
     StartingMoves: Move[];
     AvailableMoves: Move[];
     BaseRatings: RatingSet;
     Range: string;
-    Intro: string;
-    About: string;
-    ExamplePowers: string[];
+    Intro: JSX.Element;
+    About: JSX.Element;
+    ExamplePowers: JSX.Element[];
 
-    constructor(title: string, powerPrompt: string, startingMoves: Move[], availableMoves: Move[],
-        baseRatings: RatingSet, range: string, intro: string, about: string, examplePowers: string[]) {
+    constructor(title: string, powerPrompt: JSX.Element, startingMoves: Move[], availableMoves: Move[],
+        baseRatings: RatingSet, range: string, intro: JSX.Element, about: JSX.Element, examplePowers: JSX.Element[]) {
         
         this.Title = title;
         this.PowerPrompt = powerPrompt;

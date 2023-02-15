@@ -5,7 +5,7 @@
                 {{ playbook.Title }}
                 <ul>
                     <li>
-                        {{ playbook.PowerPrompt }}
+                        <JSXEmbed :vNode="playbook.PowerPrompt" />
                     </li>
                 </ul>
             </li>
@@ -16,6 +16,7 @@
 <script setup lang="ts">
 
 import { Playbooks } from '@/predefined/Playbooks';
+import JSXEmbed from '@/components/JsxEmbed.vue';
 
 </script>
   
